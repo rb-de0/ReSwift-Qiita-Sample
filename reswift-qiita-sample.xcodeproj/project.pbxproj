@@ -18,6 +18,12 @@
 		188E2E031DB5E8AD00375BD7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2DFF1DB5E8AD00375BD7 /* Result.framework */; };
 		188E2E041DB5E8AD00375BD7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E001DB5E8AD00375BD7 /* APIKit.framework */; };
 		188E2E061DB5EB7B00375BD7 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E051DB5EB7B00375BD7 /* SwinjectStoryboard.framework */; };
+		188E2E0C1DB5EFD900375BD7 /* QiitaGetItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E0B1DB5EFD900375BD7 /* QiitaGetItemsRequest.swift */; };
+		188E2E111DB5F0CB00375BD7 /* QiitaRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E101DB5F0CB00375BD7 /* QiitaRequestType.swift */; };
+		188E2E151DB5F3DE00375BD7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E121DB5F3DE00375BD7 /* RxSwift.framework */; };
+		188E2E161DB5F3DE00375BD7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E131DB5F3DE00375BD7 /* RxCocoa.framework */; };
+		188E2E171DB5F3DE00375BD7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E141DB5F3DE00375BD7 /* RxBlocking.framework */; };
+		188E2E191DB5F5AA00375BD7 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E181DB5F5AA00375BD7 /* QiitaItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		188E2DFF1DB5E8AD00375BD7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		188E2E001DB5E8AD00375BD7 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		188E2E051DB5EB7B00375BD7 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		188E2E0B1DB5EFD900375BD7 /* QiitaGetItemsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaGetItemsRequest.swift; sourceTree = "<group>"; };
+		188E2E101DB5F0CB00375BD7 /* QiitaRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaRequestType.swift; sourceTree = "<group>"; };
+		188E2E121DB5F3DE00375BD7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		188E2E131DB5F3DE00375BD7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		188E2E141DB5F3DE00375BD7 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		188E2E181DB5F5AA00375BD7 /* QiitaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188E2E151DB5F3DE00375BD7 /* RxSwift.framework in Frameworks */,
+				188E2E161DB5F3DE00375BD7 /* RxCocoa.framework in Frameworks */,
+				188E2E171DB5F3DE00375BD7 /* RxBlocking.framework in Frameworks */,
 				188E2E061DB5EB7B00375BD7 /* SwinjectStoryboard.framework in Frameworks */,
 				188E2E011DB5E8AD00375BD7 /* Unbox.framework in Frameworks */,
 				188E2E021DB5E8AD00375BD7 /* Swinject.framework in Frameworks */,
@@ -84,6 +99,9 @@
 		188E2DF41DB5E58700375BD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				188E2E121DB5F3DE00375BD7 /* RxSwift.framework */,
+				188E2E131DB5F3DE00375BD7 /* RxCocoa.framework */,
+				188E2E141DB5F3DE00375BD7 /* RxBlocking.framework */,
 				188E2E051DB5EB7B00375BD7 /* SwinjectStoryboard.framework */,
 				188E2DFD1DB5E8AD00375BD7 /* Unbox.framework */,
 				188E2DFE1DB5E8AD00375BD7 /* Swinject.framework */,
@@ -132,8 +150,35 @@
 		188E2DFC1DB5E68C00375BD7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				188E2E0D1DB5EFEE00375BD7 /* QiitaAPI */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		188E2E091DB5EFA500375BD7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E0B1DB5EFD900375BD7 /* QiitaGetItemsRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		188E2E0A1DB5EFAA00375BD7 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E181DB5F5AA00375BD7 /* QiitaItem.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		188E2E0D1DB5EFEE00375BD7 /* QiitaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E091DB5EFA500375BD7 /* Request */,
+				188E2E0A1DB5EFAA00375BD7 /* Response */,
+				188E2E101DB5F0CB00375BD7 /* QiitaRequestType.swift */,
+			);
+			name = QiitaAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +262,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 			);
 			outputPaths = (
 			);
@@ -231,8 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188E2E111DB5F0CB00375BD7 /* QiitaRequestType.swift in Sources */,
+				188E2E191DB5F5AA00375BD7 /* QiitaItem.swift in Sources */,
 				186B03121DB5C2A7007543DB /* ViewController.swift in Sources */,
 				186B03101DB5C2A7007543DB /* AppDelegate.swift in Sources */,
+				188E2E0C1DB5EFD900375BD7 /* QiitaGetItemsRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
