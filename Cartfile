@@ -1,0 +1,5 @@
+github "ReSwift/ReSwift"
+github "ishkawa/APIKit" ~> 3.0
+github "johnsundell/unbox"
+github "Swinject/Swinject" "2.0.0-beta.2"
+github "Swinject/SwinjectStoryboard" "1.0.0-beta.2"

@@ -12,6 +12,12 @@
 		186B03151DB5C2A8007543DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B03131DB5C2A8007543DB /* Main.storyboard */; };
 		186B03171DB5C2A8007543DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B03161DB5C2A8007543DB /* Assets.xcassets */; };
 		186B031A1DB5C2A8007543DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B03181DB5C2A8007543DB /* LaunchScreen.storyboard */; };
+		188E2DF61DB5E58700375BD7 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2DF51DB5E58700375BD7 /* ReSwift.framework */; };
+		188E2E011DB5E8AD00375BD7 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2DFD1DB5E8AD00375BD7 /* Unbox.framework */; };
+		188E2E021DB5E8AD00375BD7 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2DFE1DB5E8AD00375BD7 /* Swinject.framework */; };
+		188E2E031DB5E8AD00375BD7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2DFF1DB5E8AD00375BD7 /* Result.framework */; };
+		188E2E041DB5E8AD00375BD7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E001DB5E8AD00375BD7 /* APIKit.framework */; };
+		188E2E061DB5EB7B00375BD7 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E051DB5EB7B00375BD7 /* SwinjectStoryboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		186B03161DB5C2A8007543DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186B03191DB5C2A8007543DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186B031B1DB5C2A8007543DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188E2DF51DB5E58700375BD7 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		188E2DFD1DB5E8AD00375BD7 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
+		188E2DFE1DB5E8AD00375BD7 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		188E2DFF1DB5E8AD00375BD7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		188E2E001DB5E8AD00375BD7 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		188E2E051DB5EB7B00375BD7 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188E2E061DB5EB7B00375BD7 /* SwinjectStoryboard.framework in Frameworks */,
+				188E2E011DB5E8AD00375BD7 /* Unbox.framework in Frameworks */,
+				188E2E021DB5E8AD00375BD7 /* Swinject.framework in Frameworks */,
+				188E2E031DB5E8AD00375BD7 /* Result.framework in Frameworks */,
+				188E2E041DB5E8AD00375BD7 /* APIKit.framework in Frameworks */,
+				188E2DF61DB5E58700375BD7 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 			children = (
 				186B030E1DB5C2A7007543DB /* reswift-qiita-sample */,
 				186B030D1DB5C2A7007543DB /* Products */,
+				188E2DF41DB5E58700375BD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,67 @@
 		186B030E1DB5C2A7007543DB /* reswift-qiita-sample */ = {
 			isa = PBXGroup;
 			children = (
-				186B030F1DB5C2A7007543DB /* AppDelegate.swift */,
-				186B03111DB5C2A7007543DB /* ViewController.swift */,
-				186B03131DB5C2A8007543DB /* Main.storyboard */,
+				188E2DF91DB5E64800375BD7 /* Storyboards */,
+				188E2DF81DB5E63E00375BD7 /* Classes */,
 				186B03161DB5C2A8007543DB /* Assets.xcassets */,
-				186B03181DB5C2A8007543DB /* LaunchScreen.storyboard */,
 				186B031B1DB5C2A8007543DB /* Info.plist */,
 			);
 			path = "reswift-qiita-sample";
+			sourceTree = "<group>";
+		};
+		188E2DF41DB5E58700375BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E051DB5EB7B00375BD7 /* SwinjectStoryboard.framework */,
+				188E2DFD1DB5E8AD00375BD7 /* Unbox.framework */,
+				188E2DFE1DB5E8AD00375BD7 /* Swinject.framework */,
+				188E2DFF1DB5E8AD00375BD7 /* Result.framework */,
+				188E2E001DB5E8AD00375BD7 /* APIKit.framework */,
+				188E2DF51DB5E58700375BD7 /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		188E2DF81DB5E63E00375BD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				188E2DFB1DB5E67600375BD7 /* Data */,
+				188E2DFA1DB5E66500375BD7 /* UI */,
+				186B030F1DB5C2A7007543DB /* AppDelegate.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		188E2DF91DB5E64800375BD7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				186B03131DB5C2A8007543DB /* Main.storyboard */,
+				186B03181DB5C2A8007543DB /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		188E2DFA1DB5E66500375BD7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				186B03111DB5C2A7007543DB /* ViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		188E2DFB1DB5E67600375BD7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				188E2DFC1DB5E68C00375BD7 /* Network */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		188E2DFC1DB5E68C00375BD7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +146,7 @@
 				186B03081DB5C2A7007543DB /* Sources */,
 				186B03091DB5C2A7007543DB /* Frameworks */,
 				186B030A1DB5C2A7007543DB /* Resources */,
+				188E2DF71DB5E59000375BD7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,6 +203,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188E2DF71DB5E59000375BD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Unbox.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		186B03081DB5C2A7007543DB /* Sources */ = {
@@ -260,6 +355,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "reswift-qiita-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reb-dev.reswift-qiita-sample";
@@ -274,6 +373,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "reswift-qiita-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reb-dev.reswift-qiita-sample";
@@ -301,6 +404,7 @@
 				186B03201DB5C2A8007543DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
