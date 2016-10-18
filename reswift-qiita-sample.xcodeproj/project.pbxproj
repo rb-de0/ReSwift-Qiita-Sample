@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		186B03101DB5C2A7007543DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B030F1DB5C2A7007543DB /* AppDelegate.swift */; };
-		186B03121DB5C2A7007543DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B03111DB5C2A7007543DB /* ViewController.swift */; };
+		186B03121DB5C2A7007543DB /* QiiteItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B03111DB5C2A7007543DB /* QiiteItemListViewController.swift */; };
 		186B03151DB5C2A8007543DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B03131DB5C2A8007543DB /* Main.storyboard */; };
 		186B03171DB5C2A8007543DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B03161DB5C2A8007543DB /* Assets.xcassets */; };
 		186B031A1DB5C2A8007543DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B03181DB5C2A8007543DB /* LaunchScreen.storyboard */; };
@@ -24,12 +24,17 @@
 		188E2E161DB5F3DE00375BD7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E131DB5F3DE00375BD7 /* RxCocoa.framework */; };
 		188E2E171DB5F3DE00375BD7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188E2E141DB5F3DE00375BD7 /* RxBlocking.framework */; };
 		188E2E191DB5F5AA00375BD7 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E181DB5F5AA00375BD7 /* QiitaItem.swift */; };
+		188E2E1F1DB5F9D100375BD7 /* ItemListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E1E1DB5F9D100375BD7 /* ItemListState.swift */; };
+		188E2E251DB5FB1400375BD7 /* ItemListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E241DB5FB1400375BD7 /* ItemListAction.swift */; };
+		188E2E271DB5FB5A00375BD7 /* ItemListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E261DB5FB5A00375BD7 /* ItemListReducer.swift */; };
+		188E2E291DB606F100375BD7 /* QiitaItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E281DB606F100375BD7 /* QiitaItemCell.swift */; };
+		188E2E2C1DB609CF00375BD7 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E2B1DB609CF00375BD7 /* UIScrollView+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		186B030C1DB5C2A7007543DB /* reswift-qiita-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reswift-qiita-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		186B030F1DB5C2A7007543DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		186B03111DB5C2A7007543DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		186B03111DB5C2A7007543DB /* QiiteItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiiteItemListViewController.swift; sourceTree = "<group>"; };
 		186B03141DB5C2A8007543DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		186B03161DB5C2A8007543DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186B03191DB5C2A8007543DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +51,11 @@
 		188E2E131DB5F3DE00375BD7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		188E2E141DB5F3DE00375BD7 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		188E2E181DB5F5AA00375BD7 /* QiitaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaItem.swift; sourceTree = "<group>"; };
+		188E2E1E1DB5F9D100375BD7 /* ItemListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListState.swift; sourceTree = "<group>"; };
+		188E2E241DB5FB1400375BD7 /* ItemListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListAction.swift; sourceTree = "<group>"; };
+		188E2E261DB5FB5A00375BD7 /* ItemListReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListReducer.swift; sourceTree = "<group>"; };
+		188E2E281DB606F100375BD7 /* QiitaItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaItemCell.swift; sourceTree = "<group>"; };
+		188E2E2B1DB609CF00375BD7 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 		188E2DF81DB5E63E00375BD7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				188E2E2A1DB609C000375BD7 /* Extension */,
 				188E2DFB1DB5E67600375BD7 /* Data */,
 				188E2DFA1DB5E66500375BD7 /* UI */,
 				186B030F1DB5C2A7007543DB /* AppDelegate.swift */,
@@ -134,7 +145,7 @@
 		188E2DFA1DB5E66500375BD7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				186B03111DB5C2A7007543DB /* ViewController.swift */,
+				188E2E1B1DB5F89100375BD7 /* ItemList */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -179,6 +190,58 @@
 				188E2E101DB5F0CB00375BD7 /* QiitaRequestType.swift */,
 			);
 			name = QiitaAPI;
+			sourceTree = "<group>";
+		};
+		188E2E1A1DB5F87500375BD7 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E1E1DB5F9D100375BD7 /* ItemListState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		188E2E1B1DB5F89100375BD7 /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E1C1DB5F8A700375BD7 /* Views */,
+				188E2E231DB5FA6D00375BD7 /* Actions */,
+				188E2E1A1DB5F87500375BD7 /* State */,
+				188E2E1D1DB5F8F300375BD7 /* Reducer */,
+			);
+			name = ItemList;
+			sourceTree = "<group>";
+		};
+		188E2E1C1DB5F8A700375BD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				186B03111DB5C2A7007543DB /* QiiteItemListViewController.swift */,
+				188E2E281DB606F100375BD7 /* QiitaItemCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		188E2E1D1DB5F8F300375BD7 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E261DB5FB5A00375BD7 /* ItemListReducer.swift */,
+			);
+			name = Reducer;
+			sourceTree = "<group>";
+		};
+		188E2E231DB5FA6D00375BD7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E241DB5FB1400375BD7 /* ItemListAction.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		188E2E2A1DB609C000375BD7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				188E2E2B1DB609CF00375BD7 /* UIScrollView+Rx.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +344,14 @@
 			files = (
 				188E2E111DB5F0CB00375BD7 /* QiitaRequestType.swift in Sources */,
 				188E2E191DB5F5AA00375BD7 /* QiitaItem.swift in Sources */,
-				186B03121DB5C2A7007543DB /* ViewController.swift in Sources */,
+				188E2E1F1DB5F9D100375BD7 /* ItemListState.swift in Sources */,
+				186B03121DB5C2A7007543DB /* QiiteItemListViewController.swift in Sources */,
 				186B03101DB5C2A7007543DB /* AppDelegate.swift in Sources */,
+				188E2E271DB5FB5A00375BD7 /* ItemListReducer.swift in Sources */,
+				188E2E291DB606F100375BD7 /* QiitaItemCell.swift in Sources */,
 				188E2E0C1DB5EFD900375BD7 /* QiitaGetItemsRequest.swift in Sources */,
+				188E2E251DB5FB1400375BD7 /* ItemListAction.swift in Sources */,
+				188E2E2C1DB609CF00375BD7 /* UIScrollView+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
