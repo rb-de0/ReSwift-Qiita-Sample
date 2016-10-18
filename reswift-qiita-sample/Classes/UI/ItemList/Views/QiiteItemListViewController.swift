@@ -44,8 +44,8 @@ class QiiteItemListViewController: UIViewController, StoreSubscriber {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        itemListStore.subscribe(self)
+        super.viewWillDisappear(animated)
+        itemListStore.unsubscribe(self)
     }
     
     func newState(state: ItemListState) {
