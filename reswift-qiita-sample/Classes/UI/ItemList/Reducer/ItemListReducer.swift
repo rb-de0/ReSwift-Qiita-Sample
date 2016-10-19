@@ -26,6 +26,7 @@ struct ItemListReducer: Reducer{
             
         case let action as ItemListAction.RecievedItemsAction:
             
+            state.isLoading = false
             state.currentPage += 1
             state.items += action.items
             state.fetchedItemCount = action.items.count
