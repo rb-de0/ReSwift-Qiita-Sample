@@ -32,10 +32,10 @@ class QiiteItemListViewController: UIViewController, StoreSubscriber {
         tableView.estimatedRowHeight = 50
         
         tableView.rx_reachedBottom.subscribe(onNext: {[unowned self] in
-            self.itemListStore.dispatch(ItemListAction.loadItems(disposeBag: self.disposeBag))
+            self.itemListStore.dispatch(ItemListAction.Creator.loadItems(disposeBag: self.disposeBag))
         }).addDisposableTo(disposeBag)
         
-        itemListStore.dispatch(ItemListAction.loadItems(disposeBag: disposeBag))
+        itemListStore.dispatch(ItemListAction.Creator.loadItems(disposeBag: disposeBag))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +49,11 @@ class QiiteItemListViewController: UIViewController, StoreSubscriber {
     }
     
     func newState(state: ItemListState) {
+        
+        if state.fetchedItemCount == 0 {
+            return
+        }
+        
         DispatchQueue.main.async {
             self.visibleItems = state.items
             self.tableView.reloadData()

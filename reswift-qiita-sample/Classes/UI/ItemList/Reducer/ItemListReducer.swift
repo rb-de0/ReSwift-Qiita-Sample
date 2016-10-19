@@ -15,12 +15,22 @@ struct ItemListReducer: Reducer{
         
         switch action {
         case _ as ItemListAction.RequestStartAction:
+            
             state.isLoading = true
+            state.fetchedItemCount = 0
+            
         case _ as ItemListAction.ResuestFinishedAction:
+            
             state.isLoading = false
+            state.fetchedItemCount = 0
+            
         case _ as ItemListAction.RecievedItemsAction:
+            
+            let action = (action as! ItemListAction.RecievedItemsAction)
             state.currentPage += 1
-            state.items += (action as! ItemListAction.RecievedItemsAction).items
+            state.items += action.items
+            state.fetchedItemCount = action.items.count
+            
         default:
             break
         }

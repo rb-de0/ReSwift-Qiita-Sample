@@ -9,6 +9,7 @@
 import ReSwift
 
 struct ItemListState: StateType{
+    var fetchedItemCount = 0
     var items = [QiitaItem]()
     var isLoading = false
     var currentPage = 0
